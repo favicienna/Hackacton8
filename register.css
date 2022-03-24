@@ -42,7 +42,7 @@ input[type='checkbox'] {
   color: white;
   border-radius: 15px;
 }
-#show:checked ~ .container {
+.container {
   display: block;
 }
 .container .close-btn {
