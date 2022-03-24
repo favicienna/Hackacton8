@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <script src="index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basic web</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <SCRIPT LANGUAGE="JavaScript">
+    function Login(){
+    var done=0;
+    var username=document.login.username.value;
+    username=username.toLowerCase();
+    var password=document.login.password.value;
+    password=password.toLowerCase();
+    if (username =="andri" && password =="123456") { alert("Login Berhasil "); }
+    else 
+    if (done==0) { alert("ID atau username salah!"); }
+    }
+    </SCRIPT>
+  <body>
+    <div class="style3">
+      <h1 style="position: absolute; top: 0; left: 50px; color: red; font-size: 50px;">
+        VorLoop
+      </h1>
+      <div class="style1">
+        <h1>Masuk</h1>
+        <div>
+          <form id="style2">
+            <input type="text" placeholder="Nama pengguna" />
+            <input type="password" placeholder="Kata sandi" />
+            <input type="button" value="Masuk" onclick="Login()" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
