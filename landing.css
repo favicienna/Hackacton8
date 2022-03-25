@@ -1,0 +1,77 @@
+body{
+  background-color: rgb(0, 0, 0);
+}
+
+.wallpaper{
+  background: linear-gradient(#053692a2,#630606a1), url('./img/capa-stranger-things2.jpg') no-repeat center center/cover;
+  box-shadow: inset 120px 100px 250px rgb(0, 0, 0);
+  width: 100%;
+  height: 95vh;
+  position: relative;
+}
+
+.up ul a{
+  color: rgb(255, 255, 255);
+  padding-left: 8%;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul a:hover{
+  color: rgb(247, 105, 105);
+  font-family: 'Roboto', sans-serif;
+}
+
+.middle{
+  padding-left: 100px;
+  padding-top: 170px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.middle h1{
+  font-size: 50px;
+}
+
+.play{
+  width: 100px;
+  height: 45px;
+  border: 0%;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background-color: rgb(226, 226, 226);
+}
+
+.play:hover{
+  background-color: white;
+}
+
+.catagories h1{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  padding-left: 50px;
+}
+
+.movies ul img{
+  margin: 15px;
+  width: 200px;
+  height: 250px;
+  
+}
+
+.action ul img{
+  margin: 15px;
+  width: 260px;
+  height: 250px;
+}
+
+.anime ul img {
+  margin: 15px;
+  width: auto;
+  height: 150px;
+}
