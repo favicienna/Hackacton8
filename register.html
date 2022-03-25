@@ -12,24 +12,28 @@
   <div class="center">
     <div class="container" style="display: block">
       <div class="text">
-        Login Form
+        Registration Form
       </div>
       <form action="#">
         <div class="data">
-          <input type="text" name="userid" placeholder="Username" required>
+          <input id="username" type="text" placeholder="Input username" required>
         </div>
         <div class="data">
-          <input type="password" name="userpsw" placeholder="Password" required>
+          <input id="password" type="password" placeholder="Input password" required>
+        </div>
+        <div class="data">
+          <input id="confirmPassword" type="password" placeholder="Confirm password">
         </div>
         <div class="btn">
           <div class="inner"></div>
-          <button type="submit" onclick="check(this.form)">Login</button>
+          <button id="myButton" class="float-left submit-button" onclick="getData()">Register</button>
         </div>
-        <div class=" signup-link" style="color: white;">
-          Not a member? <a href="register.html" style="color: white;">Signup now!</a>
+        <div class="signup-link" style="color: white;text-align: center;">Already have an account?
+          <a href="index.html" style="color: white;">Back to login!</a>
         </div>
     </div>
-    </form>
+  </div>
+  </form>
   </div>
   </div>
   <script src="index.js"></script>
