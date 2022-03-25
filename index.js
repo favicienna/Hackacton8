@@ -5,35 +5,36 @@ function getData() {
   confirmPassword = document.getElementById("confirmPassword").value
 
   if (password === confirmPassword) {
-    swal("Registration Success!", "You can login with your account now!", "success");
+    // swal("Registration Success!", "You can login with your account now!", "success");
+    alert('Registration Success!"')
 
     localStorage.setItem("username", username)
     localStorage.setItem("password", password)
     localStorage.setItem("confirmPassword", confirmPassword)
   } else {
-    swal("Password does not match!", "Please input your password carefully!", "error");
+    //   swal("Password does not match!", "Please input your password carefully!", "error");
+    alert('Password does not match!')
   }
 }
 
 let getAll = localStorage;
-const localUsername = getAll.usename;
+const localUsername = getAll.username;
 const localPassword = getAll.password;
 
 console.log(getAll);
 
-function check(form) {
-  /*function to check userid & password*/
-  /*the following code checkes whether the entered userid and password are matching*/
-  if (localUsername === form.userid.value && localPassword === form.userpsw.value) {
-    window.location.replace(landing.html);/*opens the target page while Id & password matches*/
+function check() {
+  return true
+}
+
+document.getElementById("submit-btn").addEventListener('click', function (e) {
+  let username = document.getElementById("username").value
+  let password = document.getElementById("password").value
+
+  if (localUsername === username && localPassword === password) {
+    // swal("Match!!!", "You have logged in successfully!", "success");
+    alert("Let's Goooooo!!!")
   } else {
-    swal("Wrong Username/Password", "Please input your Username/Password carefully!", "error");
+    e.preventDefault()
   }
-}
-
-function greeting() {
-  let name = getAll.getItem('username')
-
-  greetUser.textContent = "Hello," + name +
-    " . You can choose and watch your video now!";
-}
+})
